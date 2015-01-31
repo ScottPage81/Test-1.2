@@ -1,0 +1,26 @@
+.normalFood{
+	background-color: #4a4;
+}
+
+.specialFood{
+	background-color: #44d;
+}
+
+.poisonFood{
+	background-color: #d44;
+}
+
+.snake{
+	background-color: #444;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+.square{
+	border: 0;
+	height: 4px;
+	width: 4px;
+	border-radius: 100%;
+}

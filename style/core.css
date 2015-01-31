@@ -1,0 +1,99 @@
+@font-face{
+	font-family: ariapenciroman;
+	src: url("ariapenciroman.woff");
+}
+
+*{
+	/*
+		The FontStruction “ariapenciroman” (http://fontstruct.com/fontstructions/show/92006) by Christoph Windmueller is licensed under a Creative Commons Attribution Non-commercial No Derivatives license (http://creativecommons.org/licenses/by-nc-nd/3.0/).
+	*/
+	font-family: ariapenciroman, constantia;
+	vertical-align: middle;
+	text-align: center;
+}
+
+body{
+	background-color: #aaa;
+}
+
+#ArrowUp{
+	border-radius: 25px 25px 0px 0px;
+}
+
+#ArrowDown{
+	border-radius: 0px 0px 25px 25px;
+}
+
+#ArrowLeft{
+	border-radius: 25px 0px 0px 25px;
+}
+#ArrowRight{
+	border-radius: 0px 25px 25px 0px;
+}
+
+section{
+	margin: auto;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.showy{
+	background-color: #444;
+	border-radius: 8px;
+	box-shadow: 2px 2px 2px 3px rgba(255,255,255,0.15) inset,
+				-2px -2px 2px 3px rgba(0,0,0,0.15) inset;
+	color: rgba(255,255,255,0.75);
+	margin-right: -3px;
+	margin-top: 3px;
+	font-size: 21pt;
+	font-style: italic;
+	padding: 10px 0px 5px 0px;
+}
+
+.showy.button{
+	background-color: #444;
+}
+
+.showy.button:hover{
+	background-color: #aaa;
+}
+
+.showy.button:active{
+	background-color: #000;
+	color: #fff;
+}
+
+.showy.arrow{
+	padding: 50px;
+	margin: 0;
+}
+
+.showyGroup{
+	width: 800px;
+	text-align: center;
+}
+
+#unoRow .showy, #duoRow .showy, #triRow .showy, #quadRow .showy{
+	display: inline-block;
+	width: 194px;
+}
+
+#unoRow .showy{
+	font-size: 30pt;
+}
+
+#duoRow .showy{
+	font-size: 25pt;
+}
+
+#triRow .showy{
+	font-size: 21pt;
+}
+
+#quadRow .showy{
+	font-size: 18pt;
+}
+
+#Game{
+	background-color: #ddd;
+}

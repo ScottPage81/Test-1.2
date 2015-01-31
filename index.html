@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- The style for the user interface -->
+	<link type="text/css" rel="stylesheet" href="style/core.css" />
+	
+	<!-- The style for the game -->
+	<link type="text/css" rel="stylesheet" href="style/game.css" />
+	
+	<title>Snake Version 03</title>
+	
+	<!-- Checks some of the newer features the game uses to make sure the
+	browser can run the game -->
+	<script type="text/javascript" src="script/prechecks.js"></script>
+	
+	<!-- Includes a number of constants that are used throughout the code -->
+	<script type="text/javascript" src="script/header.js"></script>
+
+	<!-- The classes for the game -->
+	<script type="text/javascript" src="script/Board.js"></script>
+	<script type="text/javascript" src="script/Food.js"></script>
+	<script type="text/javascript" src="script/Game.js"></script>
+	<script type="text/javascript" src="script/Snake.js"></script>
+	<script type="text/javascript" src="script/Square.js"></script>
+	<script type="text/javascript" src="script/LevelManager.js"></script>
+	
+	<!-- Binds all of the event listeners and creates a new game  -->
+	<script type="text/javascript" src="script/core.js"></script>
+	
+	<!-- Logo -->
+	<link rel="icon" type="image/png" href="snakelogo.png" />
+</head>
+<body>
+	<section>
+		<!-- The key (what colours mean what in the game) -->
+		<div class="showyGroup" id="quadRow">
+			<div class="showy normalFood">
+				Normal
+			</div>
+			<div class="showy specialFood">
+				Special
+			</div>
+			<div class="showy poisonFood">
+				Poison
+			</div>
+			<div class="showy snake">
+				Snake
+			</div>
+		</div>
+		
+		<!-- Game Data: level, score and the user's high score -->
+		<div class="showyGroup" id="triRow">
+			<div id="level" class="showy">Level: 0</div>
+			<div id="score" class="showy">Score: 0</div>
+			<div id="highScore" class="showy">High Score: 0</div>
+		</div>
+		
+		<!-- Action buttons -->
+		<div class="showyGroup" id="duoRow">
+			<div id="pause" class="showy button">Pause</div>
+			<div id="restart" class="showy button">Replay</div>
+		</div>
+		
+		<!-- Action buttons -->
+		<div class="showyGroup" id="unoRow">
+			<div id="play" class="showy button">Play</div>
+		</div>
+	</section>
+	
+	<!-- Game Area -->
+	<section>
+		<table>
+			<tr>
+				<td></td>
+				<!-- Up arrow for touch -->
+				<td class="showy arrow" id="ArrowUp"></td>
+				<td></td>
+			</tr>
+			<tr>
+				<!-- Left arrow for touch -->
+				<td class="showy arrow" id="ArrowLeft"></td>
+				
+				<!-- The Game -->
+				<td id="Game"></td>
+				
+				<!-- Right arrow for touch -->
+				<td class="showy arrow" id="ArrowRight"></td>
+			</tr>
+			<tr>
+				<td></td>
+				
+				<!-- Down arrow for touch -->
+				<td class="showy arrow" id="ArrowDown"></td>
+				<td></td>
+			</tr>
+		</table>
+	</section>
+</body>
+</html>
